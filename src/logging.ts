@@ -39,6 +39,7 @@ export const logger = createLogger({
     // TODO Make transport configurable
     // new transports.File({filename: 'error.log', level: 'error'}),
     // new transports.File({filename: 'combined.log'}),
-    new transports.Console()
+    // new transports.Console()
+    new winston.transports.File({ filename: 'turnserver-healthckeck.log' })
   ]
 });
